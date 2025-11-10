@@ -29,11 +29,12 @@ const PortfolioCard = ({
     <Link href={`/portfolio/${slug}`} className="group block">
       <div className="bg-white dark:bg-dark-bg-tertiary rounded-xl overflow-hidden shadow-lg dark:shadow-primary-900/10 hover:shadow-2xl dark:hover:shadow-primary-900/20 transition-all duration-300 h-full flex flex-col border border-secondary-100 dark:border-dark-border">
         {/* Image */}
-        <div className="relative h-48 sm:h-56 overflow-hidden bg-secondary-100 dark:bg-secondary-800">
+        <div className="relative w-full aspect-[16/10] overflow-hidden bg-secondary-100 dark:bg-secondary-800">
           <Image
             src={image}
             alt={title}
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover group-hover:scale-105 transition-transform duration-300"
           />
           <div className="absolute top-4 left-4">

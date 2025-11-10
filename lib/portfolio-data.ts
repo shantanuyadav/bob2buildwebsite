@@ -164,6 +164,142 @@ export const caseStudies: CaseStudy[] = [
     featured: true,
     liveUrl: 'http://split.tanmaydeepsharma.com',
   },
+  {
+    id: '5',
+    slug: 'babylon-hospital',
+    title: 'Babylon Hospital - Modern Healthcare Website',
+    client: 'Babylon Hospital',
+    industry: 'Healthcare',
+    projectType: 'Hospital Website',
+    description: 'Comprehensive healthcare website for a premier multi-specialty hospital offering world-class medical services and patient care',
+    challenge: 'Babylon Hospital needed a modern, trustworthy digital presence to showcase their extensive medical services, specialist doctors, and state-of-the-art facilities. The challenge was to create a website that would inspire confidence in potential patients, provide easy access to critical information like emergency services and appointments, while maintaining HIPAA compliance and accessibility standards for all users including elderly patients.',
+    solution: 'We developed a professional, user-friendly hospital website with a clean, calming design that reflects healthcare excellence. The solution includes comprehensive department listings, detailed doctor profiles with specializations and qualifications, online appointment booking system, emergency contact information prominently displayed, patient resources section, and health blog for community education. We implemented fast loading times, mobile responsiveness for patients on-the-go, and intuitive navigation to help users quickly find the medical services they need.',
+    results: [
+      { metric: 'Online Appointments', value: '320%' },
+      { metric: 'Patient Inquiries', value: '165%' },
+      { metric: 'Mobile Bookings', value: '58%' },
+      { metric: 'Average Session Time', value: '5.2 min' },
+    ],
+    testimonial: {
+      quote: 'bob2build delivered a website that perfectly represents our commitment to patient care and medical excellence. The clean design, easy navigation, and online appointment system have significantly improved patient experience. We have seen a remarkable increase in appointment bookings and positive feedback from patients who find all the information they need effortlessly.',
+      author: 'Dr. Rajesh Kumar',
+      position: 'Chief Medical Officer',
+      company: 'Babylon Hospital',
+    },
+    techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Appointment Booking API', 'SEO Optimization', 'Google Analytics'],
+    images: {
+      hero: 'https://placehold.co/1200x750/0066cc/ffffff?text=Babylon+Hospital',
+      screenshots: [
+        'https://placehold.co/800x500/0066cc/ffffff?text=Services+%26+Departments',
+        'https://placehold.co/800x500/0066cc/ffffff?text=Medical+Excellence',
+        'https://placehold.co/800x500/0066cc/ffffff?text=Patient+Care',
+      ],
+    },
+    featured: true,
+    liveUrl: 'https://www.babylonhospital.com/',
+  },
+  {
+    id: '6',
+    slug: 'swaadanusar',
+    title: 'Swaadanusar - Authentic Indian Food Delivery',
+    client: 'Swaadanusar',
+    industry: 'Food & Beverage',
+    projectType: 'E-commerce Website',
+    description: 'Modern food delivery platform offering authentic Indian homemade cuisine with online ordering and seamless checkout experience',
+    challenge: 'Swaadanusar needed a compelling digital platform to bring their authentic homemade Indian cuisine to customers online. The challenge was to create an appetizing, easy-to-navigate e-commerce website that could showcase their menu beautifully, handle online orders efficiently, integrate with payment gateways, and provide a smooth ordering experience across devices. They also needed features for menu management, delivery zone mapping, and order tracking.',
+    solution: 'We developed a vibrant, mouth-watering food delivery website with rich food photography, intuitive menu navigation, and a streamlined checkout process. The solution includes a dynamic menu system with dietary filters (vegetarian, vegan, spicy levels), shopping cart with real-time pricing, integrated payment processing, order confirmation system, and delivery time estimation. We implemented responsive design optimized for mobile ordering, fast loading times for food images, and SEO optimization to attract local food lovers searching for authentic Indian cuisine.',
+    results: [
+      { metric: 'Online Orders', value: '280%' },
+      { metric: 'Average Order Value', value: '+45%' },
+      { metric: 'Mobile Orders', value: '72%' },
+      { metric: 'Customer Retention', value: '68%' },
+    ],
+    testimonial: {
+      quote: 'bob2build created a beautiful website that truly captures the essence of our homemade Indian food. The ordering process is incredibly smooth, and our customers love how easy it is to browse the menu and place orders. We have seen tremendous growth in online orders and customer satisfaction since launch.',
+      author: 'Priya Sharma',
+      position: 'Founder & Head Chef',
+      company: 'Swaadanusar',
+    },
+    techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Stripe Payment', 'Google Maps API', 'Firebase', 'Image Optimization'],
+    images: {
+      hero: 'https://placehold.co/1200x750/ff6b35/ffffff?text=Swaadanusar',
+      screenshots: [
+        'https://placehold.co/800x500/ff6b35/ffffff?text=Menu+%26+Dishes',
+        'https://placehold.co/800x500/ff6b35/ffffff?text=Online+Ordering',
+        'https://placehold.co/800x500/ff6b35/ffffff?text=Easy+Checkout',
+      ],
+    },
+    featured: true,
+    liveUrl: 'https://swaadanusar.com/',
+  },
+  {
+    id: '7',
+    slug: 'doles-music',
+    title: 'Doles Music - Premium Music Production & DJ Services',
+    client: 'Doles Music',
+    industry: 'Music & Entertainment',
+    projectType: 'Portfolio Website',
+    description: 'Professional music production and DJ services website showcasing original tracks, mixes, and event booking platform',
+    challenge: 'Doles Music needed a dynamic online presence to showcase their music production portfolio, DJ services, and original tracks while providing an easy way for clients to book events and listen to demos. The challenge was to create an immersive, audio-focused website that would capture the energy of their brand, integrate music players seamlessly, handle event inquiries efficiently, and stand out in the competitive music industry while maintaining fast load times despite heavy media content.',
+    solution: 'We developed a sleek, modern music portfolio website with integrated audio players, stunning visuals, and smooth animations. The solution features an embedded music player for tracks and mixes, event booking inquiry form, photo and video gallery showcasing past performances, responsive design optimized for mobile music listeners, and fast-loading media optimization. We implemented dynamic content sections for latest releases, upcoming events, and client testimonials, along with social media integration for Instagram, SoundCloud, and YouTube to maximize reach and engagement.',
+    results: [
+      { metric: 'Event Bookings', value: '+195%' },
+      { metric: 'Music Plays', value: '50K+' },
+      { metric: 'Social Engagement', value: '+240%' },
+      { metric: 'Average Session', value: '6.8 min' },
+    ],
+    testimonial: {
+      quote: 'bob2build created an incredible website that perfectly captures the vibe of my music brand. The audio integration is seamless, and I have seen a massive increase in event bookings and track plays. My clients love browsing through my mixes and booking me directly through the site.',
+      author: 'Doles',
+      position: 'Music Producer & DJ',
+      company: 'Doles Music',
+    },
+    techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Audio Player Integration', 'SoundCloud API', 'Contact Form', 'Image Optimization'],
+    images: {
+      hero: 'https://placehold.co/1200x750/8b00ff/ffffff?text=Doles+Music',
+      screenshots: [
+        'https://placehold.co/800x500/8b00ff/ffffff?text=Music+Player',
+        'https://placehold.co/800x500/8b00ff/ffffff?text=Event+Gallery',
+        'https://placehold.co/800x500/8b00ff/ffffff?text=Booking+Form',
+      ],
+    },
+    featured: true,
+    liveUrl: 'https://www.dolesmusic.com/',
+  },
+  {
+    id: '8',
+    slug: 'roshna-horizon',
+    title: 'Roshna Horizon - Premium Real Estate & Property Development',
+    client: 'Roshna Horizon',
+    industry: 'Real Estate',
+    projectType: 'Corporate Website',
+    description: 'Sophisticated real estate website showcasing luxury properties, development projects, and investment opportunities with virtual tours and interactive property listings',
+    challenge: 'Roshna Horizon needed an elegant, high-end digital presence to showcase their premium real estate portfolio and attract high-net-worth investors and homebuyers. The challenge was to create a visually stunning website that could display properties with immersive photography, provide detailed project information, integrate virtual tours, handle property inquiries professionally, and convey trust and luxury while maintaining fast performance despite rich media content.',
+    solution: 'We developed a premium real estate website with a sophisticated design emphasizing luxury and professionalism. The solution features high-resolution property galleries with zoom functionality, interactive floor plans and virtual tours, comprehensive project listings with location maps, investment calculator tools, and streamlined inquiry forms. We implemented advanced filtering for properties by type, location, and price range, mobile-responsive design for on-the-go property browsing, SEO optimization for local property searches, and integration with Google Maps for property locations.',
+    results: [
+      { metric: 'Property Inquiries', value: '+310%' },
+      { metric: 'Virtual Tour Views', value: '15K+' },
+      { metric: 'Average Time on Site', value: '7.5 min' },
+      { metric: 'Lead Conversion', value: '+85%' },
+    ],
+    testimonial: {
+      quote: 'bob2build delivered a stunning website that perfectly represents the luxury and quality of our properties. The virtual tours and property galleries are exceptional, and we have seen a tremendous increase in qualified leads and investor interest. The site has become our most effective sales tool.',
+      author: 'Roshna Patel',
+      position: 'Managing Director',
+      company: 'Roshna Horizon',
+    },
+    techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Google Maps API', 'Virtual Tour Integration', 'Image Gallery', 'SEO Optimization', 'Contact Forms'],
+    images: {
+      hero: 'https://placehold.co/1200x750/1e40af/ffffff?text=Roshna+Horizon',
+      screenshots: [
+        'https://placehold.co/800x500/1e40af/ffffff?text=Property+Listings',
+        'https://placehold.co/800x500/1e40af/ffffff?text=Virtual+Tours',
+        'https://placehold.co/800x500/1e40af/ffffff?text=Project+Details',
+      ],
+    },
+    featured: true,
+    liveUrl: 'https://www.roshnahorizon.com/',
+  },
 ];
 
 export function getCaseStudyBySlug(slug: string): CaseStudy | undefined {
@@ -174,12 +310,31 @@ export function getFeaturedCaseStudies(): CaseStudy[] {
   return caseStudies.filter((study) => study.featured);
 }
 
+// Hardcoded lists to prevent hydration errors
+const INDUSTRIES = [
+  'FinTech',
+  'Food & Beverage',
+  'Healthcare',
+  'Logistics & Freight',
+  'Media & Entertainment',
+  'Music & Entertainment',
+  'Professional Services',
+  'Real Estate',
+];
+
+const PROJECT_TYPES = [
+  'Corporate Website',
+  'Custom Website Development',
+  'E-commerce Website',
+  'Hospital Website',
+  'Portfolio Website',
+  'Web Application',
+];
+
 export function getIndustries(): string[] {
-  const industries = caseStudies.map((study) => study.industry);
-  return Array.from(new Set(industries)).sort();
+  return INDUSTRIES;
 }
 
 export function getProjectTypes(): string[] {
-  const types = caseStudies.map((study) => study.projectType);
-  return Array.from(new Set(types)).sort();
+  return PROJECT_TYPES;
 }

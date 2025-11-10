@@ -88,11 +88,12 @@ export default function CaseStudyPage({ params }: Props) {
             </div>
 
             {/* Hero Image */}
-            <div className="relative h-64 sm:h-96 rounded-xl overflow-hidden shadow-2xl mb-8">
+            <div className="relative w-full aspect-[21/9] sm:aspect-[16/7] rounded-xl overflow-hidden shadow-2xl mb-8">
               <Image
                 src={caseStudy.images.hero}
                 alt={caseStudy.title}
                 fill
+                sizes="(max-width: 1024px) 100vw, 1024px"
                 className="object-cover"
                 priority
               />
@@ -137,12 +138,13 @@ export default function CaseStudyPage({ params }: Props) {
                   {caseStudy.images.screenshots.map((screenshot, index) => (
                     <div
                       key={index}
-                      className="relative h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+                      className="relative w-full aspect-[16/10] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
                     >
                       <Image
                         src={screenshot}
                         alt={`${caseStudy.title} screenshot ${index + 1}`}
                         fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
                         className="object-cover"
                       />
                     </div>
@@ -219,11 +221,12 @@ export default function CaseStudyPage({ params }: Props) {
                   href={`/portfolio/${project.slug}`}
                   className="group block bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
                 >
-                  <div className="relative h-48 bg-secondary-100">
+                  <div className="relative w-full aspect-[16/10] bg-secondary-100">
                     <Image
                       src={project.images.hero}
                       alt={project.title}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>

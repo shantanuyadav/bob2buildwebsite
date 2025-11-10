@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { Metadata } from 'next';
 import PortfolioCard from '@/components/PortfolioCard';
 import { caseStudies, getIndustries, getProjectTypes } from '@/lib/portfolio-data';
@@ -9,8 +9,8 @@ export default function PortfolioPage() {
   const [selectedIndustry, setSelectedIndustry] = useState<string>('all');
   const [selectedProjectType, setSelectedProjectType] = useState<string>('all');
 
-  const industries = getIndustries();
-  const projectTypes = getProjectTypes();
+  const industries = useMemo(() => getIndustries(), []);
+  const projectTypes = useMemo(() => getProjectTypes(), []);
 
   const filteredProjects = caseStudies.filter((project) => {
     const industryMatch = selectedIndustry === 'all' || project.industry === selectedIndustry;

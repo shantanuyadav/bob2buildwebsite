@@ -83,7 +83,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ClientThemeProvider>
           <Navigation />
-          <main className="min-h-screen">
+          <main className="min-h-screen pt-16">
             {children}
           </main>
           <Footer />

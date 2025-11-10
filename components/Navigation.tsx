@@ -43,24 +43,21 @@ const Navigation = () => {
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white dark:bg-dark-bg-secondary shadow-md py-4'
-          : 'bg-white/95 dark:bg-dark-bg-secondary/95 backdrop-blur-sm py-5'
+          ? 'bg-white dark:bg-dark-bg-secondary shadow-md py-3'
+          : 'bg-white/95 dark:bg-dark-bg-secondary/95 backdrop-blur-sm py-4'
       }`}
     >
       <div className="container-custom">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link
-            href="/"
-            className="flex items-center group"
-          >
-            <div className="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 transition-transform group-hover:scale-105">
+          <Link href="/" className="flex items-center logo-container p-0 m-0">
+            <div className="relative logo-image-wrapper">
               <Image
                 src="/logo.svg"
                 alt="bob2build logo"
-                width={80}
-                height={80}
-                className="object-contain"
+                width={120}
+                height={120}
+                className="logo-image object-contain"
                 priority
                 unoptimized
               />
@@ -68,7 +65,7 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-6 flex-1 justify-center">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -82,6 +79,10 @@ const Navigation = () => {
                 {link.label}
               </Link>
             ))}
+          </div>
+
+          {/* Desktop Right Side */}
+          <div className="hidden md:flex items-center space-x-4">
             <ThemeToggle />
             <Link href="/contact" className="btn-primary">
               Get Started
