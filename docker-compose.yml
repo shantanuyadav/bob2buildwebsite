@@ -3,11 +3,28 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      target: production
+      target: development
     container_name: bob2build
     ports:
-      - "6000:3000"
+      - "3000:3000"
     environment:
-      - NODE_ENV=production
-      - NEXT_PUBLIC_SITE_URL=https://bob2build.tanmaydeepsharma.com
+      - NODE_ENV=development
+      - NEXT_PUBLIC_SITE_URL=http://localhost:3000
+    volumes:
+      # Mount source code for hot reload
+      - ./app:/app/app
+      - ./components:/app/components
+      - ./lib:/app/lib
+      - ./public:/app/public
+      - ./styles:/app/styles
+      - ./data:/app/data
+      - ./next.config.js:/app/next.config.js
+      - ./tailwind.config.ts:/app/tailwind.config.ts
+      - ./postcss.config.js:/app/postcss.config.js
+      - ./tsconfig.json:/app/tsconfig.json
+      # Prevent node_modules from being overwritten
+      - /app/node_modules
+      - /app/.next
     restart: unless-stopped
+    stdin_open: true
+    tty: true
