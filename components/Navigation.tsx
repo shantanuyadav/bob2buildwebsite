@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import ThemeToggle from '@/components/ThemeToggle';
 
@@ -51,9 +52,22 @@ const Navigation = () => {
           {/* Logo */}
           <Link
             href="/"
-            className="text-2xl font-bold font-display text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
+            className="flex items-center space-x-3 group"
           >
-            bob2build
+            <div className="w-10 h-10 flex-shrink-0">
+              <Image
+                src="/logo.png"
+                alt="bob2build logo"
+                width={40}
+                height={40}
+                className="object-contain"
+                priority
+                unoptimized
+              />
+            </div>
+            <span className="text-2xl font-bold font-display text-primary-600 dark:text-primary-400 group-hover:text-primary-700 dark:group-hover:text-primary-300 transition-colors">
+              bob2build
+            </span>
           </Link>
 
           {/* Desktop Navigation */}

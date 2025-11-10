@@ -26,6 +26,14 @@ export const metadata: Metadata = {
   description: "Professional web development agency specializing in custom websites, eCommerce solutions, and web applications for startups and growing businesses.",
   keywords: ["web development", "web design", "eCommerce", "web applications", "custom websites", "Shopify", "Next.js"],
   authors: [{ name: "bob2build" }],
+  icons: {
+    icon: [
+      { url: '/favicon.png', type: 'image/png' },
+      { url: '/logo.png', sizes: '192x192', type: 'image/png' }
+    ],
+    shortcut: '/favicon.png',
+    apple: '/logo.png',
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
