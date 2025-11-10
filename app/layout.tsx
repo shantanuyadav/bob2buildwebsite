@@ -28,11 +28,11 @@ export const metadata: Metadata = {
   authors: [{ name: "bob2build" }],
   icons: {
     icon: [
-      { url: '/favicon.png', type: 'image/png' },
-      { url: '/logo.png', sizes: '192x192', type: 'image/png' }
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/logo.svg', sizes: '192x192', type: 'image/svg+xml' }
     ],
-    shortcut: '/favicon.png',
-    apple: '/logo.png',
+    shortcut: '/favicon.svg',
+    apple: '/logo.svg',
   },
   openGraph: {
     type: "website",

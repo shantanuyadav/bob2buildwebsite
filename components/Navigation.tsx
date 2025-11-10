@@ -56,7 +56,7 @@ const Navigation = () => {
           >
             <div className="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 transition-transform group-hover:scale-105">
               <Image
-                src="/logo.png"
+                src="/logo.svg"
                 alt="bob2build logo"
                 width={80}
                 height={80}

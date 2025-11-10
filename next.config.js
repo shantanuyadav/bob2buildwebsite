@@ -3,6 +3,7 @@ const nextConfig = {
   images: {
     domains: ['placehold.co', 'images.unsplash.com'],
     formats: ['image/webp'],
+    unoptimized: true, // Allow SVG and unoptimized images
   },
   reactStrictMode: true,
   swcMinify: true,
