@@ -52,22 +52,19 @@ const Navigation = () => {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center space-x-3 group"
+            className="flex items-center group"
           >
-            <div className="w-10 h-10 flex-shrink-0">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 transition-transform group-hover:scale-105">
               <Image
                 src="/logo.png"
                 alt="bob2build logo"
-                width={40}
-                height={40}
+                width={80}
+                height={80}
                 className="object-contain"
                 priority
                 unoptimized
               />
             </div>
-            <span className="text-2xl font-bold font-display text-primary-600 dark:text-primary-400 group-hover:text-primary-700 dark:group-hover:text-primary-300 transition-colors">
-              bob2build
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
