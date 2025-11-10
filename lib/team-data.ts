@@ -23,7 +23,7 @@ export const teamMembers: TeamMember[] = [
       'Product Development',
       'Team Leadership',
     ],
-    image: '/images/team/daksh-bhatia.svg',
+    image: '/images/team/daksh-bhatia.jpg',
     linkedin: 'https://www.linkedin.com/in/daksh-bhatia/',
   },
   {
@@ -39,7 +39,7 @@ export const teamMembers: TeamMember[] = [
       'Performance Optimization',
       'Technical Leadership',
     ],
-    image: '/images/team/tanmay-sharma.svg',
+    image: '/images/team/tanmay-sharma.jpg',
     linkedin: 'https://in.linkedin.com/in/tanmaydeep',
   },
   {
@@ -55,7 +55,7 @@ export const teamMembers: TeamMember[] = [
       'ROI Optimization',
       'Stakeholder Communication',
     ],
-    image: '/images/team/shantanu-kumar.svg',
+    image: '/images/team/shantanu-kumar.jpg',
     linkedin: 'https://www.linkedin.com/in/shantanu-kumar-80b037179',
   },
   {
@@ -71,7 +71,7 @@ export const teamMembers: TeamMember[] = [
       'Content Strategy',
       'Growth Marketing',
     ],
-    image: '/images/team/eklavaya-shekhawat.svg',
+    image: '/images/team/eklavaya-shekhawat.jpg',
     linkedin: 'https://www.linkedin.com/in/eklavaya-shekhawat',
   },
 ];
