@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', system-ui, sans-serif;
+    --font-space-grotesk: 'Space Grotesk', system-ui, sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-white text-secondary-900 transition-colors duration-300;
+  }
+
+  .dark body {
+    @apply bg-dark-bg-primary text-dark-text-primary;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-all duration-200 inline-block text-center shadow-sm hover:shadow-md;
+  }
+
+  .dark .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 shadow-lg shadow-primary-900/20 hover:shadow-primary-900/30;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary-100 text-secondary-900 px-6 py-3 rounded-lg font-semibold hover:bg-secondary-200 transition-colors duration-200 inline-block text-center;
+  }
+
+  .dark .btn-secondary {
+    @apply bg-secondary-800 text-secondary-100 hover:bg-secondary-700;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary-600 text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-primary-600 hover:text-white transition-colors duration-200 inline-block text-center;
+  }
+
+  .dark .btn-outline {
+    @apply border-primary-500 text-primary-400 hover:bg-primary-600 hover:border-primary-600;
+  }
+
+  .section-padding {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  .heading-xl {
+    @apply text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight;
+  }
+
+  .dark .heading-xl {
+    @apply text-dark-text-primary;
+  }
+
+  .heading-lg {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight;
+  }
+
+  .dark .heading-lg {
+    @apply text-dark-text-primary;
+  }
+
+  .heading-md {
+    @apply text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight;
+  }
+
+  .dark .heading-md {
+    @apply text-dark-text-primary;
+  }
+
+  .heading-sm {
+    @apply text-xl sm:text-2xl font-bold tracking-tight;
+  }
+
+  .dark .heading-sm {
+    @apply text-dark-text-primary;
+  }
+
+  .text-body {
+    @apply text-base sm:text-lg text-secondary-600 leading-relaxed;
+  }
+
+  .dark .text-body {
+    @apply text-dark-text-secondary;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
