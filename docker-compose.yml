@@ -3,6 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      target: production
     container_name: bob2build
     ports:
       - "6000:3000"
