@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#34d399"/>
+  <text x="400" y="80" font-family="Inter, sans-serif" font-size="32" font-weight="700" fill="#ffffff" text-anchor="middle">Add Expense</text>
+  <rect x="150" y="120" width="500" height="60" fill="rgba(255,255,255,0.3)" rx="8"/>
+  <text x="170" y="158" font-family="Inter, sans-serif" font-size="20" fill="#ffffff">Description</text>
+  <rect x="150" y="200" width="500" height="60" fill="rgba(255,255,255,0.3)" rx="8"/>
+  <text x="170" y="238" font-family="Inter, sans-serif" font-size="20" fill="#ffffff">Amount: $</text>
+  <rect x="150" y="280" width="500" height="60" fill="rgba(255,255,255,0.3)" rx="8"/>
+  <text x="170" y="318" font-family="Inter, sans-serif" font-size="20" fill="#ffffff">Split Between</text>
+  <rect x="150" y="360" width="240" height="50" fill="rgba(16,185,129,0.8)" rx="8"/>
+  <rect x="410" y="360" width="240" height="50" fill="rgba(255,255,255,0.5)" rx="8"/>
+  <text x="270" y="393" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle">Split Equally</text>
+  <text x="530" y="393" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#10b981" text-anchor="middle">Custom Split</text>
+</svg>

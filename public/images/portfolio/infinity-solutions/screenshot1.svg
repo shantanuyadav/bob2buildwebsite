@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#022135"/>
+  <rect x="50" y="50" width="700" height="80" fill="rgba(255,255,255,0.05)" rx="4"/>
+  <text x="80" y="95" font-family="Inter, sans-serif" font-size="28" font-weight="700" fill="#ffffff">
+    The Infinity Solutions
+  </text>
+  <rect x="50" y="150" width="700" height="400" fill="rgba(209,30,43,0.1)" rx="8"/>
+  <text x="400" y="320" font-family="Inter, sans-serif" font-size="48" font-weight="700" fill="#D11E2B" text-anchor="middle">
+    Connecting Global Trade
+  </text>
+  <text x="400" y="370" font-family="Inter, sans-serif" font-size="24" font-weight="400" fill="#ffffff" text-anchor="middle" opacity="0.8">
+    One Shipment at a Time
+  </text>
+</svg>

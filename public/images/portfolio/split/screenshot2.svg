@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#6ee7b7"/>
+  <text x="400" y="80" font-family="Inter, sans-serif" font-size="32" font-weight="700" fill="#10b981" text-anchor="middle">Group Balances</text>
+  <rect x="100" y="130" width="600" height="80" fill="rgba(16,185,129,0.3)" rx="8"/>
+  <text x="120" y="175" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#10b981">Alex owes you</text>
+  <text x="680" y="175" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#10b981" text-anchor="end">$45.00</text>
+  <rect x="100" y="230" width="600" height="80" fill="rgba(16,185,129,0.3)" rx="8"/>
+  <text x="120" y="275" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#10b981">You owe Sarah</text>
+  <text x="680" y="275" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#ef4444" text-anchor="end">$32.50</text>
+  <rect x="100" y="330" width="600" height="80" fill="rgba(16,185,129,0.3)" rx="8"/>
+  <text x="120" y="375" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#10b981">Mike owes you</text>
+  <text x="680" y="375" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#10b981" text-anchor="end">$18.75</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#c7d2fe"/>
+  <text x="400" y="80" font-family="Inter, sans-serif" font-size="32" font-weight="700" fill="#6366f1" text-anchor="middle">User Dashboard</text>
+  <rect x="60" y="120" width="680" height="100" fill="rgba(99,102,241,0.3)" rx="8"/>
+  <text x="80" y="170" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#6366f1">Continue Watching</text>
+  <rect x="60" y="240" width="680" height="100" fill="rgba(99,102,241,0.3)" rx="8"/>
+  <text x="80" y="290" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#6366f1">My Playlists</text>
+  <rect x="60" y="360" width="680" height="100" fill="rgba(99,102,241,0.3)" rx="8"/>
+  <text x="80" y="410" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#6366f1">Recently Added</text>
+</svg>

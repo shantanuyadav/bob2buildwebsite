@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#022135"/>
+  <text x="400" y="80" font-family="Inter, sans-serif" font-size="32" font-weight="700" fill="#ffffff" text-anchor="middle">
+    Industries Served
+  </text>
+  <g transform="translate(0, 100)">
+    <rect x="100" y="30" width="150" height="120" fill="rgba(209,30,43,0.2)" rx="8"/>
+    <rect x="280" y="30" width="150" height="120" fill="rgba(209,30,43,0.2)" rx="8"/>
+    <rect x="460" y="30" width="150" height="120" fill="rgba(209,30,43,0.2)" rx="8"/>
+    <rect x="100" y="180" width="150" height="120" fill="rgba(209,30,43,0.2)" rx="8"/>
+    <rect x="280" y="180" width="150" height="120" fill="rgba(209,30,43,0.2)" rx="8"/>
+    <rect x="460" y="180" width="150" height="120" fill="rgba(209,30,43,0.2)" rx="8"/>
+    <text x="175" y="95" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#ffffff" text-anchor="middle">Manufacturing</text>
+    <text x="355" y="95" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#ffffff" text-anchor="middle">Retail</text>
+    <text x="535" y="95" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#ffffff" text-anchor="middle">Technology</text>
+    <text x="175" y="245" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#ffffff" text-anchor="middle">Automotive</text>
+    <text x="355" y="245" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#ffffff" text-anchor="middle">Food & Beverage</text>
+    <text x="535" y="245" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#ffffff" text-anchor="middle">Pharmaceuticals</text>
+  </g>
+</svg>

@@ -15,8 +15,8 @@ export default function ServicesPage() {
       <section className="pt-32 pb-16 sm:pt-40 sm:pb-20 bg-gradient-to-br from-primary-50 via-white to-accent-50 dark:from-dark-bg-secondary dark:via-dark-bg-primary dark:to-dark-bg-tertiary">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="heading-xl mb-6">Our Services</h1>
-            <p className="text-body text-xl">
+            <h1 className="heading-xl mb-6 text-secondary-900 dark:text-dark-text-primary">Our Services</h1>
+            <p className="text-body text-xl text-secondary-600 dark:text-dark-text-secondary">
               Comprehensive web development solutions designed to help your business thrive online
             </p>
           </div>
@@ -31,19 +31,19 @@ export default function ServicesPage() {
               <div
                 key={service.id}
                 id={service.slug}
-                className={`scroll-mt-24 ${index !== 0 ? 'pt-12 border-t border-secondary-200' : ''}`}
+                className={`scroll-mt-24 ${index !== 0 ? 'pt-12 border-t border-secondary-200 dark:border-dark-border' : ''}`}
               >
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                   {/* Service Info */}
                   <div>
                     <div className="flex items-center gap-4 mb-4">
                       <span className="text-6xl">{service.icon}</span>
-                      <h2 className="heading-md">{service.title}</h2>
+                      <h2 className="heading-md text-secondary-900 dark:text-dark-text-primary">{service.title}</h2>
                     </div>
-                    <p className="text-body text-lg mb-6">{service.fullDescription}</p>
+                    <p className="text-body text-lg mb-6 text-secondary-600 dark:text-dark-text-secondary">{service.fullDescription}</p>
                     {service.priceRange && (
                       <div className="bg-primary-50 dark:bg-primary-900/20 border-l-4 border-primary-600 dark:border-primary-500 p-4 mb-6">
-                        <p className="text-sm font-semibold text-secondary-700 dark:text-secondary-300 mb-1">Typical Investment</p>
+                        <p className="text-sm font-semibold text-secondary-700 dark:text-dark-text-secondary mb-1">Typical Investment</p>
                         <p className="text-2xl font-bold text-primary-600 dark:text-primary-400">{service.priceRange}</p>
                       </div>
                     )}
@@ -73,7 +73,7 @@ export default function ServicesPage() {
                                 d="M5 13l4 4L19 7"
                               />
                             </svg>
-                            <span className="text-secondary-700 dark:text-secondary-300">{feature}</span>
+                            <span className="text-secondary-700 dark:text-dark-text-secondary">{feature}</span>
                           </li>
                         ))}
                       </ul>
@@ -86,7 +86,7 @@ export default function ServicesPage() {
                         {service.useCases.map((useCase, idx) => (
                           <li key={idx} className="flex items-start gap-3">
                             <svg
-                              className="w-5 h-5 text-primary-500 flex-shrink-0 mt-1"
+                              className="w-5 h-5 text-primary-500 dark:text-primary-400 flex-shrink-0 mt-1"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -96,7 +96,7 @@ export default function ServicesPage() {
                                 clipRule="evenodd"
                               />
                             </svg>
-                            <span className="text-secondary-700 dark:text-secondary-300">{useCase}</span>
+                            <span className="text-secondary-700 dark:text-dark-text-secondary">{useCase}</span>
                           </li>
                         ))}
                       </ul>
@@ -109,7 +109,7 @@ export default function ServicesPage() {
                         {service.deliverables.map((deliverable, idx) => (
                           <li key={idx} className="flex items-start gap-3">
                             <svg
-                              className="w-5 h-5 text-accent-500 flex-shrink-0 mt-1"
+                              className="w-5 h-5 text-accent-500 dark:text-accent-400 flex-shrink-0 mt-1"
                               fill="none"
                               stroke="currentColor"
                               viewBox="0 0 24 24"
@@ -121,7 +121,7 @@ export default function ServicesPage() {
                                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                               />
                             </svg>
-                            <span className="text-secondary-700 dark:text-secondary-300">{deliverable}</span>
+                            <span className="text-secondary-700 dark:text-dark-text-secondary">{deliverable}</span>
                           </li>
                         ))}
                       </ul>
@@ -138,11 +138,11 @@ export default function ServicesPage() {
       <section className="section-padding bg-secondary-50 dark:bg-dark-bg-secondary">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="heading-md mb-6">Transparent, Value-Based Pricing</h2>
-            <p className="text-body mb-8">
+            <h2 className="heading-md mb-6 text-secondary-900 dark:text-dark-text-primary">Transparent, Value-Based Pricing</h2>
+            <p className="text-body mb-8 text-secondary-600 dark:text-dark-text-secondary">
               Every project is unique, and we believe in transparent pricing. Our quotes are based on your specific requirements, timeline, and the value we'll deliver to your business. No hidden fees, no surprises.
             </p>
-            <div className="bg-white dark:bg-dark-bg-tertiary rounded-xl p-8 shadow-lg dark:shadow-primary-900/10 border dark:border-dark-border">
+            <div className="bg-white dark:bg-dark-bg-tertiary rounded-xl p-8 shadow-lg dark:shadow-primary-900/10 border border-secondary-100 dark:border-dark-border">
               <h3 className="text-xl font-bold text-secondary-900 dark:text-dark-text-primary mb-4">What Affects Project Cost?</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
                 <div>

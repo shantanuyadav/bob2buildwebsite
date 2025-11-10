@@ -47,7 +47,7 @@ export default function CaseStudyPage({ params }: Props) {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-32 pb-16 sm:pt-40 sm:pb-20 bg-gradient-to-br from-primary-50 via-white to-accent-50">
+      <section className="pt-32 pb-16 sm:pt-40 sm:pb-20 bg-gradient-to-br from-primary-50 via-white to-accent-50 dark:from-dark-bg-secondary dark:via-dark-bg-primary dark:to-dark-bg-secondary">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             {/* Breadcrumb */}
@@ -68,10 +68,23 @@ export default function CaseStudyPage({ params }: Props) {
               <span className="inline-block bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                 {caseStudy.projectType}
               </span>
-              <h1 className="heading-xl mb-4">{caseStudy.title}</h1>
-              <p className="text-xl text-secondary-600">
+              <h1 className="heading-xl mb-4 dark:text-dark-text-primary">{caseStudy.title}</h1>
+              <p className="text-xl text-secondary-600 dark:text-dark-text-secondary mb-4">
                 {caseStudy.client} • {caseStudy.industry}
               </p>
+              {caseStudy.liveUrl && (
+                <a
+                  href={caseStudy.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                  View Live Site
+                </a>
+              )}
             </div>
 
             {/* Hero Image */}
@@ -101,7 +114,7 @@ export default function CaseStudyPage({ params }: Props) {
       </section>
 
       {/* Case Study Content */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-white dark:bg-dark-bg-primary">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             {/* Challenge */}

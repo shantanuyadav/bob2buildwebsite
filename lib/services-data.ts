@@ -42,7 +42,7 @@ export const services: Service[] = [
       '30 days of post-launch support',
       'Performance and SEO optimization report',
     ],
-    priceRange: '₹4,00,000 - ₹12,00,000',
+    priceRange: '₹1,60,000 - ₹4,80,000',
   },
   {
     id: '2',
@@ -76,7 +76,7 @@ export const services: Service[] = [
       '60 days of post-launch support',
       'Marketing and analytics setup',
     ],
-    priceRange: '₹6,50,000 - ₹20,00,000',
+    priceRange: '₹2,60,000 - ₹8,00,000',
   },
   {
     id: '3',
@@ -111,7 +111,7 @@ export const services: Service[] = [
       '90 days of post-launch support',
       'User training and admin guides',
     ],
-    priceRange: '₹12,00,000 - ₹40,00,000+',
+    priceRange: '₹4,80,000 - ₹16,00,000+',
   },
   {
     id: '4',
@@ -145,7 +145,7 @@ export const services: Service[] = [
       '45 days of post-launch support',
       'Training on new platform (if applicable)',
     ],
-    priceRange: '₹5,50,000 - ₹16,00,000',
+    priceRange: '₹2,20,000 - ₹6,40,000',
   },
 ];
 

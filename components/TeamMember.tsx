@@ -12,9 +12,9 @@ interface TeamMemberProps {
 
 const TeamMember = ({ name, position, bio, expertise, image, linkedin, twitter }: TeamMemberProps) => {
   return (
-    <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="bg-white dark:bg-dark-bg-tertiary rounded-xl p-8 shadow-lg dark:shadow-primary-900/10 hover:shadow-xl dark:hover:shadow-primary-900/20 transition-shadow duration-300 border border-secondary-100 dark:border-dark-border">
       {/* Image */}
-      <div className="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden bg-secondary-100">
+      <div className="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden bg-secondary-100 dark:bg-secondary-800">
         <Image
           src={image}
           alt={name}
@@ -25,21 +25,21 @@ const TeamMember = ({ name, position, bio, expertise, image, linkedin, twitter }
 
       {/* Info */}
       <div className="text-center mb-6">
-        <h3 className="text-2xl font-bold text-secondary-900 mb-1">{name}</h3>
-        <p className="text-primary-600 font-semibold">{position}</p>
+        <h3 className="text-2xl font-bold text-secondary-900 dark:text-dark-text-primary mb-1">{name}</h3>
+        <p className="text-primary-600 dark:text-primary-400 font-semibold">{position}</p>
       </div>
 
       {/* Bio */}
-      <p className="text-body text-center mb-6">{bio}</p>
+      <p className="text-body text-secondary-600 dark:text-dark-text-secondary text-center mb-6">{bio}</p>
 
       {/* Expertise */}
       <div className="mb-6">
-        <h4 className="font-semibold text-secondary-900 mb-3 text-center">Expertise</h4>
+        <h4 className="font-semibold text-secondary-900 dark:text-dark-text-primary mb-3 text-center">Expertise</h4>
         <div className="flex flex-wrap gap-2 justify-center">
           {expertise.map((skill, index) => (
             <span
               key={index}
-              className="bg-primary-50 text-primary-700 px-3 py-1 rounded-full text-sm font-medium"
+              className="bg-primary-50 dark:bg-primary-900/20 text-primary-700 dark:text-primary-400 px-3 py-1 rounded-full text-sm font-medium"
             >
               {skill}
             </span>
@@ -52,7 +52,7 @@ const TeamMember = ({ name, position, bio, expertise, image, linkedin, twitter }
         {linkedin && (
           <a
             href={linkedin}
-            className="w-10 h-10 bg-secondary-100 rounded-full flex items-center justify-center hover:bg-primary-600 hover:text-white transition-colors"
+            className="w-10 h-10 bg-secondary-100 dark:bg-secondary-800 text-secondary-600 dark:text-dark-text-secondary rounded-full flex items-center justify-center hover:bg-primary-600 dark:hover:bg-primary-600 hover:text-white transition-colors"
             aria-label={`${name} LinkedIn`}
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -63,7 +63,7 @@ const TeamMember = ({ name, position, bio, expertise, image, linkedin, twitter }
         {twitter && (
           <a
             href={twitter}
-            className="w-10 h-10 bg-secondary-100 rounded-full flex items-center justify-center hover:bg-primary-600 hover:text-white transition-colors"
+            className="w-10 h-10 bg-secondary-100 dark:bg-secondary-800 text-secondary-600 dark:text-dark-text-secondary rounded-full flex items-center justify-center hover:bg-primary-600 dark:hover:bg-primary-600 hover:text-white transition-colors"
             aria-label={`${name} Twitter`}
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

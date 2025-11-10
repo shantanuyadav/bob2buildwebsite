@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#a5b4fc"/>
+  <text x="400" y="80" font-family="Inter, sans-serif" font-size="32" font-weight="700" fill="#ffffff" text-anchor="middle">Content Library</text>
+  <rect x="60" y="120" width="220" height="140" fill="rgba(99,102,241,0.5)" rx="8"/>
+  <rect x="290" y="120" width="220" height="140" fill="rgba(99,102,241,0.5)" rx="8"/>
+  <rect x="520" y="120" width="220" height="140" fill="rgba(99,102,241,0.5)" rx="8"/>
+  <rect x="60" y="280" width="220" height="140" fill="rgba(99,102,241,0.5)" rx="8"/>
+  <rect x="290" y="280" width="220" height="140" fill="rgba(99,102,241,0.5)" rx="8"/>
+  <rect x="520" y="280" width="220" height="140" fill="rgba(99,102,241,0.5)" rx="8"/>
+  <rect x="60" y="440" width="220" height="140" fill="rgba(99,102,241,0.5)" rx="8"/>
+  <rect x="290" y="440" width="220" height="140" fill="rgba(99,102,241,0.5)" rx="8"/>
+  <rect x="520" y="440" width="220" height="140" fill="rgba(99,102,241,0.5)" rx="8"/>
+</svg>

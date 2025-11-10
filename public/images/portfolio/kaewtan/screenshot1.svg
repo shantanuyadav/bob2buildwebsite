@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#1a1a1a"/>
+  <circle cx="150" cy="180" r="60" fill="rgba(255,255,255,0.1)"/>
+  <text x="150" y="195" font-family="Inter, sans-serif" font-size="48" font-weight="700" fill="#ffffff" text-anchor="middle">K</text>
+  <rect x="250" y="120" width="480" height="30" fill="rgba(255,255,255,0.1)" rx="4"/>
+  <rect x="250" y="170" width="350" height="20" fill="rgba(160,160,160,0.3)" rx="4"/>
+  <rect x="250" y="210" width="400" height="20" fill="rgba(160,160,160,0.3)" rx="4"/>
+  <text x="80" y="320" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Experience</text>
+  <rect x="80" y="340" width="640" height="80" fill="rgba(255,255,255,0.05)" rx="8"/>
+  <rect x="80" y="440" width="640" height="80" fill="rgba(255,255,255,0.05)" rx="8"/>
+</svg>

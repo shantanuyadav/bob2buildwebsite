@@ -13,11 +13,11 @@ export default function AboutPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="pt-32 pb-16 sm:pt-40 sm:pb-20 bg-gradient-to-br from-primary-50 via-white to-accent-50">
+      <section className="pt-32 pb-16 sm:pt-40 sm:pb-20 bg-gradient-to-br from-primary-50 via-white to-accent-50 dark:from-dark-bg-secondary dark:via-dark-bg-primary dark:to-dark-bg-tertiary">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="heading-xl mb-6">About bob2build</h1>
-            <p className="text-body text-xl">
+            <h1 className="heading-xl mb-6 text-secondary-900 dark:text-dark-text-primary">About bob2build</h1>
+            <p className="text-body text-xl text-secondary-600 dark:text-dark-text-secondary">
               We're a team of passionate developers, designers, and strategists dedicated to helping businesses thrive online
             </p>
           </div>
@@ -25,12 +25,12 @@ export default function AboutPage() {
       </section>
 
       {/* Company Story */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-white dark:bg-dark-bg-primary">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="heading-md mb-8 text-center">Our Story</h2>
+            <h2 className="heading-md mb-8 text-center text-secondary-900 dark:text-dark-text-primary">Our Story</h2>
 
-            <div className="space-y-6 text-body text-lg">
+            <div className="space-y-6 text-body text-lg text-secondary-600 dark:text-dark-text-secondary">
               <p>
                 bob2build was founded with a simple but powerful mission: to make professional, high-performance web development accessible to startups and growing businesses. We saw too many talented entrepreneurs held back by outdated websites that didn't reflect the quality of their products or services.
               </p>
@@ -47,20 +47,20 @@ export default function AboutPage() {
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary-600 mb-2">50+</div>
-                <div className="text-secondary-600">Projects Delivered</div>
+                <div className="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">50+</div>
+                <div className="text-secondary-600 dark:text-dark-text-tertiary">Projects Delivered</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary-600 mb-2">98%</div>
-                <div className="text-secondary-600">Client Satisfaction</div>
+                <div className="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">98%</div>
+                <div className="text-secondary-600 dark:text-dark-text-tertiary">Client Satisfaction</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary-600 mb-2">5+</div>
-                <div className="text-secondary-600">Years Experience</div>
+                <div className="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">5+</div>
+                <div className="text-secondary-600 dark:text-dark-text-tertiary">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary-600 mb-2">15+</div>
-                <div className="text-secondary-600">Industries Served</div>
+                <div className="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">15+</div>
+                <div className="text-secondary-600 dark:text-dark-text-tertiary">Industries Served</div>
               </div>
             </div>
           </div>
@@ -68,11 +68,11 @@ export default function AboutPage() {
       </section>
 
       {/* Core Values */}
-      <section className="section-padding bg-gradient-to-br from-primary-50 via-white to-accent-50">
+      <section className="section-padding bg-gradient-to-br from-primary-50 via-white to-accent-50 dark:from-dark-bg-secondary dark:via-dark-bg-primary dark:to-dark-bg-tertiary">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="heading-md mb-4">Our Core Values</h2>
-            <p className="text-body max-w-2xl mx-auto">
+            <h2 className="heading-md mb-4 text-secondary-900 dark:text-dark-text-primary">Our Core Values</h2>
+            <p className="text-body max-w-2xl mx-auto text-secondary-600 dark:text-dark-text-secondary">
               These principles guide everything we do and every decision we make
             </p>
           </div>
@@ -81,11 +81,11 @@ export default function AboutPage() {
             {companyValues.map((value) => (
               <div
                 key={value.id}
-                className="bg-white rounded-xl p-8 shadow-lg text-center hover:shadow-xl transition-shadow"
+                className="bg-white dark:bg-dark-bg-tertiary rounded-xl p-8 shadow-lg dark:shadow-primary-900/10 text-center hover:shadow-xl dark:hover:shadow-primary-900/20 transition-shadow border border-secondary-100 dark:border-dark-border"
               >
                 <div className="text-5xl mb-4">{value.icon}</div>
-                <h3 className="text-xl font-bold text-secondary-900 mb-3">{value.title}</h3>
-                <p className="text-body">{value.description}</p>
+                <h3 className="text-xl font-bold text-secondary-900 dark:text-dark-text-primary mb-3">{value.title}</h3>
+                <p className="text-body text-secondary-600 dark:text-dark-text-secondary">{value.description}</p>
               </div>
             ))}
           </div>
@@ -93,11 +93,11 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-white dark:bg-dark-bg-primary">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="heading-md mb-4">Meet Our Team</h2>
-            <p className="text-body max-w-2xl mx-auto">
+            <h2 className="heading-md mb-4 text-secondary-900 dark:text-dark-text-primary">Meet Our Team</h2>
+            <p className="text-body max-w-2xl mx-auto text-secondary-600 dark:text-dark-text-secondary">
               The talented people behind your success
             </p>
           </div>
@@ -120,11 +120,11 @@ export default function AboutPage() {
       </section>
 
       {/* Process Section */}
-      <section className="section-padding bg-secondary-50">
+      <section className="section-padding bg-secondary-50 dark:bg-dark-bg-secondary">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="heading-md mb-4">Our Development Process</h2>
-            <p className="text-body max-w-2xl mx-auto">
+            <h2 className="heading-md mb-4 text-secondary-900 dark:text-dark-text-primary">Our Development Process</h2>
+            <p className="text-body max-w-2xl mx-auto text-secondary-600 dark:text-dark-text-secondary">
               A proven, transparent approach that delivers results on time and on budget
             </p>
           </div>
@@ -142,41 +142,41 @@ export default function AboutPage() {
           </div>
 
           {/* Process Benefits */}
-          <div className="mt-16 bg-white rounded-xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-center text-secondary-900 mb-8">
+          <div className="mt-16 bg-white dark:bg-dark-bg-tertiary rounded-xl p-8 shadow-lg dark:shadow-primary-900/10 border border-secondary-100 dark:border-dark-border">
+            <h3 className="text-2xl font-bold text-center text-secondary-900 dark:text-dark-text-primary mb-8">
               Why Our Process Works
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-12 h-12 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <h4 className="font-bold text-secondary-900 mb-2">No Surprises</h4>
-                <p className="text-sm text-secondary-600">
+                <h4 className="font-bold text-secondary-900 dark:text-dark-text-primary mb-2">No Surprises</h4>
+                <p className="text-sm text-secondary-600 dark:text-dark-text-secondary">
                   Clear milestones and regular updates keep you informed every step of the way
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h4 className="font-bold text-secondary-900 mb-2">On-Time Delivery</h4>
-                <p className="text-sm text-secondary-600">
+                <h4 className="font-bold text-secondary-900 dark:text-dark-text-primary mb-2">On-Time Delivery</h4>
+                <p className="text-sm text-secondary-600 dark:text-dark-text-secondary">
                   Our structured process ensures we meet deadlines without compromising quality
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-12 h-12 bg-accent-100 dark:bg-accent-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-accent-600 dark:text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
-                <h4 className="font-bold text-secondary-900 mb-2">Quality Guaranteed</h4>
-                <p className="text-sm text-secondary-600">
+                <h4 className="font-bold text-secondary-900 dark:text-dark-text-primary mb-2">Quality Guaranteed</h4>
+                <p className="text-sm text-secondary-600 dark:text-dark-text-secondary">
                   Rigorous testing and QA ensure your website works flawlessly at launch
                 </p>
               </div>

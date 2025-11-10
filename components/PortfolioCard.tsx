@@ -27,9 +27,9 @@ const PortfolioCard = ({
 }: PortfolioCardProps) => {
   return (
     <Link href={`/portfolio/${slug}`} className="group block">
-      <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
+      <div className="bg-white dark:bg-dark-bg-tertiary rounded-xl overflow-hidden shadow-lg dark:shadow-primary-900/10 hover:shadow-2xl dark:hover:shadow-primary-900/20 transition-all duration-300 h-full flex flex-col border border-secondary-100 dark:border-dark-border">
         {/* Image */}
-        <div className="relative h-48 sm:h-56 overflow-hidden bg-secondary-100">
+        <div className="relative h-48 sm:h-56 overflow-hidden bg-secondary-100 dark:bg-secondary-800">
           <Image
             src={image}
             alt={title}
@@ -37,7 +37,7 @@ const PortfolioCard = ({
             className="object-cover group-hover:scale-105 transition-transform duration-300"
           />
           <div className="absolute top-4 left-4">
-            <span className="bg-primary-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+            <span className="bg-primary-600 dark:bg-primary-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
               {projectType}
             </span>
           </div>
@@ -46,12 +46,12 @@ const PortfolioCard = ({
         {/* Content */}
         <div className="p-6 flex-grow flex flex-col">
           <div className="mb-2">
-            <span className="text-sm text-secondary-500">{client} • {industry}</span>
+            <span className="text-sm text-secondary-500 dark:text-dark-text-tertiary">{client} • {industry}</span>
           </div>
-          <h3 className="heading-sm mb-3 group-hover:text-primary-600 transition-colors">
+          <h3 className="heading-sm mb-3 text-secondary-900 dark:text-dark-text-primary group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
             {title}
           </h3>
-          <p className="text-body mb-4 flex-grow line-clamp-3">
+          <p className="text-body text-secondary-600 dark:text-dark-text-secondary mb-4 flex-grow line-clamp-3">
             {description}
           </p>
 
@@ -60,14 +60,14 @@ const PortfolioCard = ({
             <div className="flex flex-wrap gap-4 mb-4">
               {results.slice(0, 2).map((result, index) => (
                 <div key={index} className="flex-1 min-w-[120px]">
-                  <div className="text-2xl font-bold text-primary-600">{result.value}</div>
-                  <div className="text-xs text-secondary-600">{result.metric}</div>
+                  <div className="text-2xl font-bold text-primary-600 dark:text-primary-400">{result.value}</div>
+                  <div className="text-xs text-secondary-600 dark:text-dark-text-tertiary">{result.metric}</div>
                 </div>
               ))}
             </div>
           )}
 
-          <div className="text-primary-600 font-semibold inline-flex items-center group-hover:translate-x-1 transition-transform">
+          <div className="text-primary-600 dark:text-primary-400 font-semibold inline-flex items-center group-hover:translate-x-1 transition-transform">
             View Case Study
             <svg
               className="w-5 h-5 ml-2"

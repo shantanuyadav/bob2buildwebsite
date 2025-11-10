@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Kaewtan Pongpaew - Certified Chief of Staff specializing in operational excellence, strategic planning, and AI-driven business transformation. 10+ years of experience delivering measurable results." />
+    <meta name="keywords" content="Chief of Staff, Operational Excellence, Strategic Planning, AI Integration, OKR Design, Thailand, Ex-Shopee" />
+    <meta name="author" content="Kaewtan Pongpaew" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kaewtan Pongpaew - Certified Chief of Staff" />
+    <meta property="og:description" content="Strategic and AI-driven Chief of Staff with 10+ years of experience leading operations excellence and commercial growth." />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Kaewtan Pongpaew - Certified Chief of Staff" />
+    <meta property="twitter:description" content="Strategic and AI-driven Chief of Staff with 10+ years of experience leading operations excellence and commercial growth." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>Kaewtan Pongpaew | Chief of Staff</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts?t=1762708915963"></script>
+  </body>
+</html>

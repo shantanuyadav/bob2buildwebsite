@@ -21,11 +21,11 @@ export default function PortfolioPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="pt-32 pb-16 sm:pt-40 sm:pb-20 bg-gradient-to-br from-primary-50 via-white to-accent-50">
+      <section className="pt-32 pb-16 sm:pt-40 sm:pb-20 bg-gradient-to-br from-primary-50 via-white to-accent-50 dark:from-dark-bg-secondary dark:via-dark-bg-primary dark:to-dark-bg-tertiary">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="heading-xl mb-6">Our Portfolio</h1>
-            <p className="text-body text-xl">
+            <h1 className="heading-xl mb-6 text-secondary-900 dark:text-dark-text-primary">Our Portfolio</h1>
+            <p className="text-body text-xl text-secondary-600 dark:text-dark-text-secondary">
               Explore our successful projects and see how we've helped businesses like yours achieve their digital goals
             </p>
           </div>
@@ -33,7 +33,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* Filters */}
-      <section className="py-8 bg-white border-b border-secondary-200 sticky top-[73px] z-40">
+      <section className="py-8 bg-white dark:bg-dark-bg-secondary border-b border-secondary-200 dark:border-dark-border sticky top-[73px] z-40">
         <div className="container-custom">
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
             {/* Industry Filter */}
@@ -45,7 +45,7 @@ export default function PortfolioPage() {
                 id="industry"
                 value={selectedIndustry}
                 onChange={(e) => setSelectedIndustry(e.target.value)}
-                className="w-full sm:w-64 px-4 py-2 rounded-lg border border-secondary-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                className="w-full sm:w-64 px-4 py-2 rounded-lg border border-secondary-300 dark:border-dark-border bg-white dark:bg-dark-bg-tertiary text-secondary-900 dark:text-dark-text-primary focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400 focus:border-transparent"
               >
                 <option value="all">All Industries</option>
                 {industries.map((industry) => (
@@ -65,7 +65,7 @@ export default function PortfolioPage() {
                 id="projectType"
                 value={selectedProjectType}
                 onChange={(e) => setSelectedProjectType(e.target.value)}
-                className="w-full sm:w-64 px-4 py-2 rounded-lg border border-secondary-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                className="w-full sm:w-64 px-4 py-2 rounded-lg border border-secondary-300 dark:border-dark-border bg-white dark:bg-dark-bg-tertiary text-secondary-900 dark:text-dark-text-primary focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400 focus:border-transparent"
               >
                 <option value="all">All Project Types</option>
                 {projectTypes.map((type) => (
@@ -83,7 +83,7 @@ export default function PortfolioPage() {
                   setSelectedIndustry('all');
                   setSelectedProjectType('all');
                 }}
-                className="text-primary-600 hover:text-primary-700 font-semibold text-sm"
+                className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-semibold text-sm"
               >
                 Clear Filters
               </button>
@@ -92,7 +92,7 @@ export default function PortfolioPage() {
 
           {/* Results Count */}
           <div className="text-center mt-4">
-            <p className="text-sm text-secondary-600">
+            <p className="text-sm text-secondary-600 dark:text-dark-text-tertiary">
               Showing {filteredProjects.length} of {caseStudies.length} projects
             </p>
           </div>
@@ -100,7 +100,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* Portfolio Grid */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-white dark:bg-dark-bg-primary">
         <div className="container-custom">
           {filteredProjects.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -121,8 +121,8 @@ export default function PortfolioPage() {
           ) : (
             <div className="text-center py-16">
               <div className="text-6xl mb-4">🔍</div>
-              <h3 className="text-2xl font-bold text-secondary-900 mb-2">No projects found</h3>
-              <p className="text-body mb-6">Try adjusting your filters to see more results</p>
+              <h3 className="text-2xl font-bold text-secondary-900 dark:text-dark-text-primary mb-2">No projects found</h3>
+              <p className="text-body text-secondary-600 dark:text-dark-text-secondary mb-6">Try adjusting your filters to see more results</p>
               <button
                 onClick={() => {
                   setSelectedIndustry('all');

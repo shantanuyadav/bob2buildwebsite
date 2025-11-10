@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#a7f3d0"/>
+  <text x="400" y="80" font-family="Inter, sans-serif" font-size="32" font-weight="700" fill="#10b981" text-anchor="middle">Settlement Flow</text>
+  <rect x="150" y="150" width="200" height="120" fill="rgba(16,185,129,0.4)" rx="8"/>
+  <text x="250" y="220" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#10b981" text-anchor="middle">You</text>
+  <rect x="450" y="150" width="200" height="120" fill="rgba(16,185,129,0.4)" rx="8"/>
+  <text x="550" y="220" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#10b981" text-anchor="middle">Friend</text>
+  <line x1="350" y1="210" x2="450" y2="210" stroke="#10b981" stroke-width="4"/>
+  <path d="M 430 200 L 450 210 L 430 220" fill="#10b981"/>
+  <text x="400" y="200" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#10b981" text-anchor="middle">$45.00</text>
+  <rect x="250" y="350" width="300" height="60" fill="#10b981" rx="8"/>
+  <text x="400" y="388" font-family="Inter, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">Send Payment Reminder</text>
+</svg>
